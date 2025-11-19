@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <script src="hummus.js"></script>
   </head>
   <body>
     <div class="container">
@@ -40,7 +41,7 @@
             <br>
             <li>2 tablespoons of Tahini paste.</li>
             <br>
-            <li>1 clove of garlic.</li>
+            <li id="garlic" onclick="myFunction()">1 clove of garlic. click to remove!</li>
             <br>
             <li>1/2 lemon's juice.</li>
             <br>
@@ -51,6 +52,8 @@
             <li>Palestinian olive oil to taste.</li>
             <br>
         </ul>
+         <h1 id="rate">Thoughts?</h1>
+        <input type="text" oninput="rateMe()">
       </div>
       <div>
         <h2>Directions</h2>
@@ -72,7 +75,16 @@
             <br>
           </ol>
           </div>
-      </div>
+          <div>
+             <h2 id="lebnan">Which country's hummus do you like the most? </h2>
+              <select onchange="lebnanYou()">
+                <option value="blank">
+                <option value="lebnan">Lebanon
+                <option value="falastine">Palestine
+                <option value="urdun">Jordan
+                <option value="musr">Egypt
+              </select>
+          </div>
     </div>
   </body>
 </html>
